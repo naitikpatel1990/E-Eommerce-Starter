@@ -1,0 +1,150 @@
+<ion-view view-title="Product Details" class="product_details_view bg_view">
+
+  <ion-content class="product_details_content">
+
+    <ion-slide-box delegate-handle="productSliderDelegateHandle">
+      <ion-slide ng-repeat="image in productDetails.images" ng-click="openImageDetailsModal()">
+        <div><img ng-src="{{image.src}}" alt="" class=""/></div>
+      </ion-slide>
+    </ion-slide-box>
+
+    <div class="list margin_zero">
+      <div class="item text-center padding">
+        <div>{{productDetails.name}}</div>
+        <div class="font_14px">
+          <ionic-ratings ratingsobj='ratingsObject'></ionic-ratings>
+        </div>
+        <div class="row font_14px">
+          <div class="selling_price"
+               ng-class="{'col-50':productDetails.old_price,'text-center width_100p':!productDetails.old_price}">
+            {{productDetails.price | currency:productDetails.currency + ' '}}
+          </div>
+          <div class="col-50 old_price" ng-if="productDetails.old_price">{{productDetails.old_price |
+            currency:productDetails.currency + ' '}}
+          </div>
+        </div>
+      </div>
+      <div class="row padding_zero">
+        <div class="col-50">
+          <label class="item item-input item-select">
+            <div class="input-label font_12px">Color</div>
+            <select>
+              <option ng-repeat="color in ['Black','Red','Blue','Gold','Grey']" class="">{{color}}</option>
+            </select>
+          </label>
+        </div>
+        <div class="col-50">
+          <label class="item item-input item-select">
+            <div class="input-label font_12px">Quantity</div>
+            <select>
+              <option ng-repeat="quantity in [1,2,3,4,5,6,7,8,9,10]" class="">{{quantity}}</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="item padding share_section padding_lr_zero">
+        <div class="uppercase font_12px">share with friends on</div>
+        <ion-scroll direction="x" style="width: 100%; height: 50px" class="padding-top">
+          <div class="social_icons">
+            <div class="social_share_circle" ng-click="shareTheProduct('facebook',productDetails)">
+              <i class="icon ion-social-facebook"></i>
+            </div>
+            <div class="social_share_circle" ng-click="shareTheProduct('twitter',productDetails)">
+              <i class="icon ion-social-twitter"></i>
+            </div>
+            <div class="social_share_circle" ng-click="shareTheProduct('whatsapp',productDetails)">
+              <i class="icon ion-social-whatsapp"></i>
+            </div>
+            <div class="social_share_circle" ng-click="shareTheProduct('chatbubble',productDetails)">
+              <i class="icon ion-ios-chatbubble"></i>
+            </div>
+          </div>
+        </ion-scroll>
+      </div>
+
+      <div class="item padding description">
+        <div class="font_bold padding_tb_5px">Specification</div>
+        <div class="row">
+          <div class="col-34">Processor</div>
+          <div class="col-66">{{productDetails.processor}} {{productDetails.processor_make}}</div>
+        </div>
+        <div class="row">
+          <div class="col-34">Internal Storage</div>
+          <div class="col-66">{{productDetails.internal_storage}}</div>
+        </div>
+        <div class="row">
+          <div class="col-34">Rear Camera</div>
+          <div class="col-66">{{productDetails.rear_camera}}</div>
+        </div>
+        <div class="row">
+          <div class="col-34">Front Camera</div>
+          <div class="col-66">{{productDetails.front_camera}}</div>
+        </div>
+        <div class="row">
+          <div class="col-34">Flash</div>
+          <div class="col-66">{{productDetails.flash}}</div>
+        </div>
+        <div class="row">
+          <div class="col-34">Operating System</div>
+          <div class="col-66">{{productDetails.operating_system}}</div>
+        </div>
+        <div class="row">
+          <div class="col-34">Resolution</div>
+          <div class="col-66">{{productDetails.resolution}}</div>
+        </div>
+        <div class="row">
+          <div class="col-34">Dimensions</div>
+          <div class="col-66">{{productDetails.dimensions}}</div>
+        </div>
+        <div class="row">
+          <div class="col-34">Wi-Fi</div>
+          <div class="col-66">{{productDetails.wi_fi}}</div>
+        </div>
+        <div class="row">
+          <div class="col-34">GPS</div>
+          <div class="col-66">{{productDetails.gps}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item item-icon-right reviews_item" ng-click="changeState('app.tabs.reviews')">
+      <div class="font_bold">Reviews</div>
+      <i class="icon ion-chevron-right"></i>
+    </div>
+
+    <div class="item padding may_like">
+      <div class="font_bold padding_tb_5px">You may also like</div>
+      <div ng-repeat="product in alsoPurchasedProducts track by $index">
+        <div class="row text-center" ng-if="$even">
+          <div class="col-50">
+            <div><img ng-src="{{alsoPurchasedProducts[$index].images[0].src}}" alt="" class="full-image"/></div>
+            <div class="font_14px">{{alsoPurchasedProducts[$index].name}}</div>
+            <div class="font_12px">{{alsoPurchasedProducts[$index].price | currency :
+              alsoPurchasedProducts[$index].currency}}
+            </div>
+          </div>
+          <div class="col-50">
+            <div><img ng-src="{{alsoPurchasedProducts[$index+1].images[0].src}}" alt="" class="full-image"/></div>
+            <div class="font_14px">{{alsoPurchasedProducts[$index+1].name}}</div>
+            <div class="font_12px">{{alsoPurchasedProducts[$index+1].price | currency :
+              alsoPurchasedProducts[$index+1].currency}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+
+  <ion-footer-bar class="text-center padding_zero">
+    <div class="button-bar">
+      <button class="button button-outline button-light margin_zero">
+        <i class="ion-ios-heart-outline font_20px color_00"></i>
+      </button>
+      <button class="button button-outline button-light margin_zero">
+        <i class="ion-ios-cart-outline font_20px color_00"></i>
+      </button>
+      <button class="button button-positive uppercase margin_zero">buy now</button>
+    </div>
+  </ion-footer-bar>
+</ion-view>

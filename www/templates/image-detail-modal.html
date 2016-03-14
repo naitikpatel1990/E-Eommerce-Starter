@@ -1,0 +1,18 @@
+<ion-modal-view class="image_detail_modal_view">
+  <ion-content class="image_detail_content">
+    <div class="image_detail_close_btn">
+      <button class="button button-clear button-block" ng-click="closeImageDetailsModal()">
+        <i class="ion-ios-close-empty close_icon"></i>
+      </button>
+    </div>
+    <div>
+      <ion-slide-box class="" delegate-handle="imageModalDelegateHandle">
+        <ion-slide ng-repeat="imgage in productDetails.images">
+          <ion-scroll zooming="true" direction="xy" class="img_detail_scroll">
+            <img ng-src="{{imgage.src}}" alt="" class="full-image image_details_slide_box_img"/>
+          </ion-scroll>
+        </ion-slide>
+      </ion-slide-box>
+    </div>
+  </ion-content>
+</ion-modal-view>

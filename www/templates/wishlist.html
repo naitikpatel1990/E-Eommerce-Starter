@@ -1,0 +1,34 @@
+<ion-view view-title="Wishlist" class="wishlist_view bg_view">
+  <ion-content class="wishlist_content">
+    <ion-list class="">
+      <ion-item class="padding_zero right_options_item" ng-repeat="i in [1,2,3,4,5]">
+        <ion-option-button class="button-royal text-center" ng-click="">
+          <i class="icon ion-ios-cart-outline"></i>&nbsp; Move to cart
+        </ion-option-button>
+        <ion-option-button class="button-assertive text-center" ng-click="">
+          <i class="icon ion-ios-trash-outline"></i>&nbsp; Remove
+        </ion-option-button>
+        <div class="row padding_zero">
+          <div class="col col-25 padding_zero">
+            <img src="http://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6-4.jpg" class="product_image">
+          </div>
+          <div class="col col-75 padding-left">
+            <h2 class="margin_tb_5px">Apple iPhone 6</h2>
+
+            <div class="font_12px white_space_normal">Color : Black</div>
+            <div class="font_12px white_space_normal">Size : 32 GB</div>
+            <div class="quantity">
+              <label class="item-input item-select">
+                <div class="input-label font_12px">
+                  Quantity
+                </div>
+                <select ng-options="i for i in [1,2,3,4,5,6,7,8,9,10]" ng-model="quantity"></select>
+              </label>
+            </div>
+            <div class="font_12px white_space_normal">Price : Rs. {{1000 * quantity}}</div>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

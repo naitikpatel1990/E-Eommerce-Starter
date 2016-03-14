@@ -1,0 +1,38 @@
+<ion-view view-title="Reviews" class="reviews_view">
+  <ion-content class="reviews_content">
+
+    <div class="list">
+      <div class="item padding">
+        <div class="text-center">{{productDetails.name}}</div>
+        <div class="font_12px row text-center padding_zero">
+          <div class="col-50 selling_price">{{productDetails.price | currency:productDetails.currency +' '}}</div>
+          <div class="col-50 old_price" ng-if="productDetails.old_price">
+            {{productDetails.old_price | currency:productDetails.currency +' '}}
+          </div>
+        </div>
+      </div>
+      <div class="item padding font_12px text-center">Average rating <span class="font_bold">4.4/5</span> from <span
+        class="font_bold">120</span> Customers
+      </div>
+      <div class="item padding">
+        <button class="button button-light button-block margin_zero" ng-click="changeState('app.tabs.write-review')">Write a Review</button>
+      </div>
+      <div class="item padding font_14px">User Reviews(12)</div>
+      <div class="item padding" ng-repeat="i in [1,2,3,4,5,6,7,8,9,10]">
+        <div class="padding_tb_5px font_14px">This product is awesome</div>
+        <div class="row padding_zero font_12px">
+          <div class="col-33">By John Doe</div>
+          <div class="col-33">Certified Buyer</div>
+          <div class="col-33">12 Dec 2015</div>
+        </div>
+        <div class="font_12px"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+        <div class="font_12px white_space_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+          blanditiis commodi culpa
+          deleniti earum id iure mollitia numquam praesentium quas. Ad aliquam amet cum eaque est, itaque minima
+          necessitatibus qui.
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

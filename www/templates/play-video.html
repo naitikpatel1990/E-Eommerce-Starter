@@ -1,0 +1,28 @@
+<ion-view view-title="Playing Video" class="play_video_view bg_view">
+  <ion-content class="play_video_content">
+
+    <div class="card list">
+      <div class="item">
+        <h3>Using iframe</h3>
+        <div class="video_container">
+          <iframe src="https://www.youtube.com/embed/wyVM1evRxNw" frameborder="0" width="560" height="315"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="card list">
+      <div class="item">
+        <h3>Using video tag</h3>
+        <div class="">
+          <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline"
+                 class="width_100p">
+            <source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
+                    type="video/mp4"/>
+          </video>
+        </div>
+      </div>
+    </div>
+
+
+  </ion-content>
+</ion-view>

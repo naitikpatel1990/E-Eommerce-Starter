@@ -1,0 +1,201 @@
+{
+  "sliderImages": [
+    {
+      "img": "http://cdn2.gsmarena.com/vv/pics/apple/apple-iphone-6-3.jpg",
+      "name": "iphone 6",
+      "price": ""
+    },
+    {
+      "img": "https://www.afwonline.com/furniture/images/dining-room/rustico.jpg",
+      "name":"Furniture",
+      "price": ""
+    },
+    {
+      "img": "http://img1.exportersindia.com/product_images/bc-full/dir_109/3244532/mac-book-apple-laptop-1375477.jpg",
+      "name":"Mac book",
+      "price": ""
+    },
+    {
+      "img": "http://core0.staticworld.net/images/article/2014/09/big-monitors-seiki_tv-100457686-large.jpg",
+      "name":"Monitors",
+      "price": ""
+    },
+    {
+      "img": "http://image.ec21.com/image/giantbike/oimg_GC07125293_CA07125313/Giant_Escape_City_W_Women_On-Road_Sports_Bicycle_Bike.jpg",
+      "name":"Sports Bicycle Bike",
+      "price": ""
+    }
+  ],
+  "deals": [
+    {
+      "img": "http://n4.sdlcdn.com/imgs/a/s/4/230x258/Samsung-Galaxy-E7-SDL118646028-1-ce54f.jpg"
+    },
+    {
+      "img": "http://1.bp.blogspot.com/-vtrdlZEsgwM/Ubd1SlJoL7I/AAAAAAAAAeY/qkwzHcdWOt4/s1600/Samsung_Galaxy_Note_3_new_android_mobile_phones_features_images_img_photo_4.jpg"
+    },
+    {
+      "img": "http://n1.sdlcdn.com/imgs/a/w/a/Lenovo-A6000-Black-SDL702289202-1-7d544.jpg"
+    },
+    {
+      "img": "http://cdn.ndtv.com/tech/images/gadgets/lenovo_vibe_z2_x2.jpg"
+    },
+    {
+      "img": "http://i-1.prod-cdn.webapps.microsoft.com/r/image/view/-/4869368/respLFixed/6/-/Lumia-532-DSIM-catalogue-orange-png.png"
+    },
+    {
+      "img": "http://cdn.shopclues.net/images/detailed/5143/23056429843096399034NokiaLumia62513848430291389791457_1402255765.jpg"
+    },
+    {
+      "img": "http://n4.sdlcdn.com/imgs/a/s/4/230x258/Samsung-Galaxy-E7-SDL118646028-1-ce54f.jpg"
+    },
+    {
+      "img": "http://1.bp.blogspot.com/-vtrdlZEsgwM/Ubd1SlJoL7I/AAAAAAAAAeY/qkwzHcdWOt4/s1600/Samsung_Galaxy_Note_3_new_android_mobile_phones_features_images_img_photo_4.jpg"
+    },
+    {
+      "img": "http://n1.sdlcdn.com/imgs/a/w/a/Lenovo-A6000-Black-SDL702289202-1-7d544.jpg"
+    },
+    {
+      "img": "http://cdn.ndtv.com/tech/images/gadgets/lenovo_vibe_z2_x2.jpg"
+    },
+    {
+      "img": "http://i-1.prod-cdn.webapps.microsoft.com/r/image/view/-/4869368/respLFixed/6/-/Lumia-532-DSIM-catalogue-orange-png.png"
+    },
+    {
+      "img": "http://cdn.shopclues.net/images/detailed/5143/23056429843096399034NokiaLumia62513848430291389791457_1402255765.jpg"
+    }
+  ],
+  "electronics": [
+    {
+      "img": "http://totaldeal.demo.couponictheme.com/c015/storage/32000/36/e2d94f07e2b8f4c21e244f3cf934228f.jpg"
+    },
+    {
+      "img": "http://cdn.gaijinpot.com/wp-content/uploads/2011/12/consumerelectronic.jpg"
+    },
+    {
+      "img": "http://www.oscarwinski.com/blog/wp-content/uploads/2013/04/macbook.png"
+    },
+    {
+      "img": "http://3.imimg.com/data3/SV/JY/MY-8152213/gifts-electronics-items-250x250.jpg"
+    },
+    {
+      "img": "http://media.indiatimes.in/media/content/2013/Jan/samsung_t9000_refrigerator_1359282231_1359282235_540x540.jpg"
+    },
+    {
+      "img": "http://gadgetinsiders.com/wp-content/uploads/2013/12/393323.jpg"
+    },
+    {
+      "img": "http://totaldeal.demo.couponictheme.com/c015/storage/32000/36/e2d94f07e2b8f4c21e244f3cf934228f.jpg"
+    },
+    {
+      "img": "http://cdn.gaijinpot.com/wp-content/uploads/2011/12/consumerelectronic.jpg"
+    },
+    {
+      "img": "http://www.oscarwinski.com/blog/wp-content/uploads/2013/04/macbook.png"
+    },
+    {
+      "img": "http://3.imimg.com/data3/SV/JY/MY-8152213/gifts-electronics-items-250x250.jpg"
+    },
+    {
+      "img": "http://media.indiatimes.in/media/content/2013/Jan/samsung_t9000_refrigerator_1359282231_1359282235_540x540.jpg"
+    },
+    {
+      "img": "http://gadgetinsiders.com/wp-content/uploads/2013/12/393323.jpg"
+    }
+  ],
+  "clothing": [
+    {
+      "img": "http://www.semwalbespoke.com/wp-content/uploads/2014/12/shirt2.jpg"
+    },
+    {
+      "img": "http://i00.i.aliimg.com/wsphoto/v0/531311040_1/2012-New-Wholesale-7-color-Men-s-tshirt-men-s-shirt-slim-shirts-cotton-t-shirt.jpg"
+    },
+    {
+      "img": "http://3.imimg.com/data3/HS/UU/MY-3900062/men-s-t-shirts-500x500.jpg"
+    },
+    {
+      "img": "http://g01.a.alicdn.com/kf/HTB16Xg2GXXXXXauXFXXq6xXFXXXA/202332251/HTB16Xg2GXXXXXauXFXXq6xXFXXXA.jpg"
+    },
+    {
+      "img": "http://bluepearlqatar.com/cp/pages/uploads/mshirts4main.jpg"
+    },
+    {
+      "img": "http://www.semwalbespoke.com/wp-content/uploads/2014/12/shirt2.jpg"
+    },
+    {
+      "img": "http://i00.i.aliimg.com/wsphoto/v0/531311040_1/2012-New-Wholesale-7-color-Men-s-tshirt-men-s-shirt-slim-shirts-cotton-t-shirt.jpg"
+    },
+    {
+      "img": "http://3.imimg.com/data3/HS/UU/MY-3900062/men-s-t-shirts-500x500.jpg"
+    },
+    {
+      "img": "http://g01.a.alicdn.com/kf/HTB16Xg2GXXXXXauXFXXq6xXFXXXA/202332251/HTB16Xg2GXXXXXauXFXXq6xXFXXXA.jpg"
+    },
+    {
+      "img": "http://bluepearlqatar.com/cp/pages/uploads/mshirts4main.jpg"
+    }
+  ],
+  "stationary": [
+    {
+      "img": "http://1.imimg.com/data/5/F/MY-1579059/Journals_250x250.jpg"
+    },
+    {
+      "img": "http://i01.i.aliimg.com/wsphoto/v1/1106589851_1/Wholesale-36PC-BOX-Deli-6546-0-7mm-pressing-ballpoint-pen-stationery-items-office-and-school-supplies.jpg"
+    },
+    {
+      "img": "http://i01.i.aliimg.com/wsphoto/v1/1106589851_5/Wholesale-36PC-BOX-Deli-6546-0-7mm-pressing-ballpoint-pen-stationery-items-office-and-school-supplies.jpg"
+    },
+    {
+      "img": "http://3.imimg.com/data3/RR/UI/MY-4225561/notebooks-250x250.png"
+    },
+    {
+      "img": "http://img.getit.in/1GQ4OG1E151409Imageschool.jpg"
+    },
+    {
+      "img": "http://1.imimg.com/data/5/F/MY-1579059/Journals_250x250.jpg"
+    },
+    {
+      "img": "http://i01.i.aliimg.com/wsphoto/v1/1106589851_1/Wholesale-36PC-BOX-Deli-6546-0-7mm-pressing-ballpoint-pen-stationery-items-office-and-school-supplies.jpg"
+    },
+    {
+      "img": "http://i01.i.aliimg.com/wsphoto/v1/1106589851_5/Wholesale-36PC-BOX-Deli-6546-0-7mm-pressing-ballpoint-pen-stationery-items-office-and-school-supplies.jpg"
+    },
+    {
+      "img": "http://3.imimg.com/data3/RR/UI/MY-4225561/notebooks-250x250.png"
+    },
+    {
+      "img": "http://img.getit.in/1GQ4OG1E151409Imageschool.jpg"
+    }
+  ],
+  "furniture": [
+    {
+      "img": "http://citydilse.com/businessdirectory/images/furniture%20ko.jpg"
+    },
+    {
+      "img": "http://decoratemyrooms.com/wp-content/uploads/2015/03/home-furniture-4.jpg"
+    },
+    {
+      "img": "http://www.avadiinfo.com/wp-content/uploads/2013/12/TV-cabinet-furniture-ideas.-3.jpg"
+    },
+    {
+      "img": "http://cdn.freshome.com/wp-content/uploads/2008/06/dust-furniture.jpg"
+    },
+    {
+      "img": "https://cdn2.urbanladder.com/images/products/49934/product/Sendai_Bookshelf_0_LP.jpg?1440683060"
+    },
+    {
+      "img": "http://citydilse.com/businessdirectory/images/furniture%20ko.jpg"
+    },
+    {
+      "img": "http://decoratemyrooms.com/wp-content/uploads/2015/03/home-furniture-4.jpg"
+    },
+    {
+      "img": "http://www.avadiinfo.com/wp-content/uploads/2013/12/TV-cabinet-furniture-ideas.-3.jpg"
+    },
+    {
+      "img": "http://cdn.freshome.com/wp-content/uploads/2008/06/dust-furniture.jpg"
+    },
+    {
+      "img": "https://cdn2.urbanladder.com/images/products/49934/product/Sendai_Bookshelf_0_LP.jpg?1440683060"
+    }
+  ]
+}

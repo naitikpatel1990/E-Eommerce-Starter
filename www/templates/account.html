@@ -1,0 +1,55 @@
+<ion-view view-title="My Account" class="account_view">
+  <ion-content class="account_content">
+    <div class="profile_image_section" ng-click="uploadImage()">
+      <i class="icon ion-person"></i>
+    </div>
+    <div class="text-center">
+      John Doe
+    </div>
+    <div class="list padding margin_zero">
+      <div class="item item-icon-right" ng-click="changeState('app.tabs.orders')">
+        Orders
+        <i class="icon ion-ios-arrow-right font_18px"></i>
+      </div>
+    </div>
+    <div class="list padding margin_zero">
+      <div class="item item-icon-right" ng-click="changeState('app.tabs.addresses')">
+        Addresses
+        <i class="icon ion-ios-arrow-right font_18px"></i>
+      </div>
+      <div class="item item-icon-right" ng-click="changeState('app.tabs.cards')">
+        Cards
+        <i class="icon ion-ios-arrow-right font_18px"></i>
+      </div>
+      <div class="item item-icon-right" ng-click="changeState('app.tabs.coupons')">
+        Coupons
+        <i class="icon ion-ios-arrow-right font_18px"></i>
+      </div>
+      <div class="item item-icon-right" ng-click="changeState('app.tabs.wallet')">
+        Wallet
+        <i class="icon ion-ios-arrow-right font_18px"></i>
+      </div>
+    </div>
+    <div class="list padding margin_zero">
+      <div class="item item-icon-right" ng-click="changeState('app.tabs.settings')">
+        Settings
+        <i class="icon ion-ios-arrow-right font_18px"></i>
+      </div>
+      <div class="item item-icon-right" ng-click="changeState('app.tabs.terms')">
+        Terms of service
+        <i class="icon ion-ios-arrow-right font_18px"></i>
+      </div>
+      <div class="item item-icon-right" ng-click="changeState('app.tabs.contact')">
+        Contact us
+        <i class="icon ion-ios-arrow-right font_18px"></i>
+      </div>
+    </div>
+    <div class="list padding">
+      <div class="text-center">
+        <button class="button button-assertive button-block margin_zero" ng-click="changeState('login')">
+          <i class="icon ion-log-out"></i>&nbsp; Logout
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

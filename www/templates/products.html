@@ -1,0 +1,49 @@
+<ion-view view-title="Products" class="products_view bg_view">
+  <div class="bar bar-subheader">
+    <div class="row text-center">
+      <div class="col-50" ng-click="openFilterModal()">
+        <i class="icon ion-funnel font_16px"></i> &nbsp; Filter
+      </div>
+      <div class="col-50 border_left_ccc" ng-click="showSortOptions()">
+        <i class="icon ion-levels font_16px"></i> &nbsp; Sort
+      </div>
+    </div>
+  </div>
+  <ion-content class="products_content">
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="refreshTheProducts()"></ion-refresher>
+
+    <div class="list card margin_zero" ng-show="allProducts.length > 0">
+      <div class="item padding" ng-repeat="product in allProducts | orderBy : sortType : sortReverse track by $index">
+        <div class="row padding_zero">
+          <div class="col-25" ng-click="goToProductDetailsPage(product)">
+            <img ng-src="{{product.images[0].src}}" class="image">
+          </div>
+          <div class="col-66 padding-left" ng-click="goToProductDetailsPage(product)">
+            <div class="font_14px white_space_normal">{{product.name}}</div>
+            <div class="font_10px color_88">{{product.internal_storage}}, {{product.screen_size}} inch</div>
+            <div class="font_14px"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+            <div class="font_12px row padding_zero">
+              <div class="col-50">{{product.price | currency:product.currency +' '}}</div>
+              <div class="col-50 old_price" ng-if="product.old_price">
+                {{product.old_price | currency:product.currency +' '}}
+              </div>
+            </div>
+          </div>
+          <div class="col-10">
+            <div class="" ng-click="addToWishList(product,$index)">
+              <i class="icon ion-ios-heart-outline font_20px" ng-show="wishlistItems.indexOf(product.id) < 0"></i>
+              <i class="icon ion-ios-heart font_20px" ng-show="wishlistItems.indexOf(product.id) > -1"></i>
+            </div>
+            <div class="padding-top" ng-click="addToWishCart(product,$index)">
+              <i class="icon ion-ios-cart-outline font_20px" ng-show="cartItems.indexOf(product.id) < 0"></i>
+              <i class="icon ion-ios-cart font_20px" ng-show="cartItems.indexOf(product.id) > -1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<ion-infinite-scroll on-infinite="loadMoreProducts()" distance="10%"></ion-infinite-scroll>-->
+  </ion-content>
+
+</ion-view>

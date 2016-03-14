@@ -1,0 +1,40 @@
+<ion-view view-title="Addresses" class="addresses_view bg_view">
+  <ion-content class="addresses_content">
+
+    <div class="padding-horizontal padding-top">
+      <button class="button button-block button-light margin_zero" ng-click="changeState('app.tabs.add-address')">
+        <i class="icon ion-ios-plus-outline"></i>&nbsp; Add New Address
+      </button>
+    </div>
+
+    <div class="padding-horizontal font_14px padding-top">Default Address</div>
+    <ion-list class="">
+      <ion-item class="padding_zero right_options_item">
+        <ion-option-button class="button-royal text-center" ng-click="">
+          <i class="icon ion-edit"></i>
+        </ion-option-button>
+        <ion-option-button class="button-assertive text-center" ng-click="">
+          <i class="icon ion-android-delete"></i>
+        </ion-option-button>
+        <div class="font_14px font_bold">John Doe</div>
+        <div class="font_12px white_space_normal">Unit 14, 3 Edgar Buildings, George Street, Bath, England, BA1 2FJ</div>
+        <div class="font_12px padding_top_5px">Mobile No: 9090909090</div>
+      </ion-item>
+    </ion-list>
+
+    <div class="padding-horizontal font_14px padding-top">Other Addresses</div>
+    <ion-list class="">
+      <ion-item class="padding_zero right_options_item" ng-repeat="i in [1,2,3,4,5]">
+        <ion-option-button class="button-royal text-center" ng-click="">
+          <i class="icon ion-edit"></i>
+        </ion-option-button>
+        <ion-option-button class="button-assertive text-center" ng-click="">
+          <i class="icon ion-android-delete"></i>
+        </ion-option-button>
+        <div class="font_14px font_bold">John Doe</div>
+        <div class="font_12px white_space_normal">Unit 14, 3 Edgar Buildings, George Street, Bath, England, BA1 2FJ</div>
+        <div class="font_12px padding_top_5px">Mobile No: 9090909090</div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

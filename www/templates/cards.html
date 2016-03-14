@@ -1,0 +1,52 @@
+<ion-view view-title="Cards" class="cards_view bg_view">
+  <ion-content class="cards_content">
+    <div class="padding-horizontal padding-top">
+      <button class="button button-block button-light margin_zero" ng-click="changeState('app.tabs.add-card')">
+        <i class="icon ion-ios-plus-outline"></i>&nbsp; Add New Card
+      </button>
+    </div>
+
+    <div class="padding-horizontal font_14px padding-top">Default Card</div>
+    <ion-list class="">
+      <ion-item class="padding_zero right_options_item">
+        <ion-option-button class="button-royal text-center" ng-click="">
+          <i class="icon ion-edit"></i>
+        </ion-option-button>
+        <ion-option-button class="button-assertive text-center" ng-click="">
+          <i class="icon ion-android-delete"></i>
+        </ion-option-button>
+        <div class="row padding_zero">
+          <div class="col-25">
+            <img src="http://bankingdoctor.com/wp-content/uploads/2014/04/VISA_cc_front.jpg" alt="" class="card_img"/>
+          </div>
+          <div class="col-66 padding-left">
+            <div class="font_14px">XXXX XXXX XXXX 1234</div>
+            <div class="font_12px padding_top_5px">Expires on : Nov 2018</div>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+
+    <div class="padding-horizontal font_14px padding-top">Other Cards</div>
+    <ion-list class="">
+      <ion-item class="padding_zero right_options_item" ng-repeat="i in [1,2,3,4,5]">
+        <ion-option-button class="button-royal text-center" ng-click="">
+          <i class="icon ion-edit"></i>
+        </ion-option-button>
+        <ion-option-button class="button-assertive text-center" ng-click="">
+          <i class="icon ion-android-delete"></i>
+        </ion-option-button>
+        <div class="row padding_zero">
+          <div class="col-25">
+            <img src="http://bankingdoctor.com/wp-content/uploads/2014/04/VISA_cc_front.jpg" alt="" class="card_img"/>
+          </div>
+          <div class="col-66 padding-left">
+            <div class="font_14px">XXXX XXXX XXXX 1234</div>
+            <div class="font_12px padding_top_5px">Expires on : Nov 2018</div>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

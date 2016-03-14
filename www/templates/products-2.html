@@ -1,0 +1,71 @@
+<ion-view view-title="Products" class="products_view_2 bg_view">
+  <div class="bar bar-subheader">
+    <div class="row text-center">
+      <div class="col-50" ng-click="openFilterModal()">
+        <i class="icon ion-funnel font_16px"></i> &nbsp; Filter
+      </div>
+      <div class="col-50 border_left_ccc" ng-click="showSortOptions()">
+        <i class="icon ion-levels font_16px"></i> &nbsp; Sort
+      </div>
+    </div>
+  </div>
+  <ion-content class="products_content_2">
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="refreshTheProducts()"></ion-refresher>
+
+    <div class="margin_zero" ng-show="allProducts.length > 0">
+
+
+      <div class="" ng-repeat="product in allProducts | orderBy : sortType : sortReverse track by $index">
+        <div class="padding_zero text-center">
+          <div class="row padding_zero" ng-if="$even">
+            <div class="col-50">
+              <div class="list card margin_5px">
+                <div class="item item-body padding">
+                  <img ng-src="{{allProducts[$index].images[0].src}}" class="product_image">
+
+                  <p class="font_14px white_space_normal">{{allProducts[$index].name}}</p>
+
+                  <div class="font_10px">
+                    {{allProducts[$index].internal_storage}}, {{allProducts[$index].screen_size}} inch
+                  </div>
+                  <div class="font_14px"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+                  <div class="font_14px font_bold">
+                    {{allProducts[$index].price | currency:allProducts[$index].currency +' '}}
+                  </div>
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                  <span class="font_10px tab-item" href="#">Add to Wishlist</span>
+                  <span class="font_10px tab-item" href="#">Add to Cart</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-50">
+              <div class="list card margin_5px">
+                <div class="item item-body padding">
+                  <img ng-src="{{allProducts[$index+1].images[0].src}}" class="product_image">
+
+                  <p class="font_14px white_space_normal">{{allProducts[$index+1].name}}</p>
+
+                  <div class="font_10px">
+                    {{allProducts[$index+1].internal_storage}}, {{allProducts[$index+1].screen_size}} inch
+                  </div>
+                  <div class="font_14px"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+                  <div class="font_14px font_bold">
+                    {{allProducts[$index+1].price | currency:allProducts[$index+1].currency +' '}}
+                  </div>
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                  <span class="font_10px tab-item" href="#">Add to Wishlist</span>
+                  <span class="font_10px tab-item" href="#">Add to Cart</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<ion-infinite-scroll on-infinite="loadMoreProducts()" distance="2%"></ion-infinite-scroll>-->
+  </ion-content>
+
+</ion-view>

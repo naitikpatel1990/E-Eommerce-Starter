@@ -1,0 +1,53 @@
+<ion-view view-title="Home" class="home_view bg_view">
+
+  <ion-content class="home_content">
+
+    <ion-slide-box delegate-handle="home_slidebox_dh">
+      <ion-slide ng-repeat="slider in wholeData.sliderImages">
+        <img ng-src="{{slider.img}}" alt="full-image"/>
+      </ion-slide>
+    </ion-slide-box>
+    <div class="section">
+      <div class="type_heading">Deals of the day</div>
+      <ion-scroll direction="x" zooming="false" delegate-handle="horizontal1" horizontal-scroll-fix="mainScroll">
+        <div class="scroll_area" ng-click="changeState('app.tabs.products')">
+          <div ng-repeat="obj in wholeData.deals"><img ng-src="{{obj.img}}" alt=""/></div>
+        </div>
+      </ion-scroll>
+    </div>
+    <div class="section">
+      <div class="type_heading">Electronics</div>
+      <ion-scroll direction="x" zooming="false" delegate-handle="horizontal2" horizontal-scroll-fix="mainScroll">
+        <div class="scroll_area" ng-click="changeState('app.tabs.products-2')">
+          <div ng-repeat="obj in wholeData.electronics"><img ng-src="{{obj.img}}" alt=""/></div>
+        </div>
+      </ion-scroll>
+    </div>
+    <div class="section">
+      <div class="type_heading">Clothing</div>
+      <ion-scroll direction="x" zooming="false" delegate-handle="horizontal3" horizontal-scroll-fix="mainScroll">
+        <div class="scroll_area" ng-click="changeState('app.tabs.products-3')">
+          <div ng-repeat="obj in wholeData.clothing"><img ng-src="{{obj.img}}" alt=""/></div>
+        </div>
+      </ion-scroll>
+    </div>
+    <div class="section">
+      <div class="type_heading">Stationary</div>
+      <ion-scroll direction="x" zooming="false" delegate-handle="horizontal4" horizontal-scroll-fix="mainScroll">
+        <div class="scroll_area" ng-click="changeState('app.tabs.products')">
+          <div ng-repeat="obj in wholeData.stationary"><img ng-src="{{obj.img}}" alt=""/></div>
+        </div>
+      </ion-scroll>
+    </div>
+    <div class="section">
+      <div class="type_heading">Furniture</div>
+      <ion-scroll direction="x" zooming="false" delegate-handle="horizontal5" horizontal-scroll-fix="mainScroll">
+        <div class="scroll_area" ng-click="changeState('app.tabs.products-2')">
+          <div ng-repeat="obj in wholeData.furniture"><img ng-src="{{obj.img}}" alt=""/></div>
+        </div>
+      </ion-scroll>
+    </div>
+
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,39 @@
+<ion-view class="login_view">
+  <ion-content class="login_content">
+
+    <div class="list padding login_container">
+      <form name="loginForm">
+        <div class="item text-center border_bottom_none">
+          <img src="img/logo.png" alt="" class="logo"/>
+        </div>
+        <div class="item item-input">
+          <input type="text" placeholder="Enter username" name="username" required ng-model="login.username"/>
+        </div>
+        <div class="item item-input">
+          <input type="password" placeholder="Enter password" name="password" required ng-model="login.password"/>
+        </div>
+        <button type="submit" class="button button-block button-outline color_ff font_bold login_btn"
+                ng-click="changeState('app.tabs.home')" ng-disabled="loginForm.$invalid">
+          <span class="icon ion-log-in"></span>&nbsp; Login
+        </button>
+        <div class="text_right">
+          <!--<span class="login_with">login with</span>-->
+          <button type="button" class="button button-clear color_ff font_bold"
+                  ng-click="loginWithFacebook()"><i class="icon ion-social-facebook"></i>
+          </button>
+        </div>
+        <div class="display_inline_box">
+          <button type="button" class="button button-clear button-small button-light font_12px"
+                  ng-click="changeState('reset-pwd')">Forgot password?
+          </button>
+        </div>
+        <div class="display_inline_box float_right">
+          <button type="button" class="button button-clear button-small button-light font_12px"
+                  ng-click="changeState('signup')">Create Account
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </ion-content>
+</ion-view>

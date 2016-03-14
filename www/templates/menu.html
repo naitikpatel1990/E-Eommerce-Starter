@@ -1,0 +1,70 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content drag-content="false">
+    <ion-nav-bar class="bar-light">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-ios-search"
+          ng-click="changeState('app.tabs.search')"></button>
+        <button class="button button-icon button-clear ion-android-more-vertical more_options_btn"
+                ng-click="openMoreOptionsPopover($event)"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" class="side_menu">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close ui-sref="app.tabs.home">
+          <i class="icon ion-ios-home font_20px"></i>&nbsp; Home
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <h4 class="padding-left">Electronics</h4>
+        <ion-item menu-close href="#/app/search">Mobiles</ion-item>
+        <ion-item menu-close href="#/app/search">Tablets</ion-item>
+        <ion-item menu-close href="#/app/search">Televisions</ion-item>
+        <ion-item menu-close href="#/app/search">Laptops</ion-item>
+        <ion-item menu-close href="#/app/search">Mobile Accessories</ion-item>
+      </ion-list>
+      <ion-list>
+        <h4 class="padding-left">Life Style</h4>
+        <ion-item menu-close href="#/app/search">Men</ion-item>
+        <ion-item menu-close href="#/app/search">Women</ion-item>
+        <ion-item menu-close href="#/app/search">Kids</ion-item>
+        <ion-item menu-close href="#/app/search">Baby</ion-item>
+        <ion-item menu-close href="#/app/search">Health Care Applications</ion-item>
+      </ion-list>
+      <ion-list>
+        <h4 class="padding-left">Home & Appliances</h4>
+        <ion-item menu-close href="#/app/search">TVs & Large Appliances</ion-item>
+        <ion-item menu-close href="#/app/search">Furniture</ion-item>
+        <ion-item menu-close href="#/app/search">Kitchen Appliances</ion-item>
+        <ion-item menu-close href="#/app/search">Home Furnishing</ion-item>
+        <ion-item menu-close href="#/app/search">Home Decor</ion-item>
+      </ion-list>
+      <ion-list>
+        <h4 class="padding-left">Automotive</h4>
+        <ion-item menu-close href="#/app/search">Car Electronics & Accessories</ion-item>
+        <ion-item menu-close href="#/app/search">Car & Bike Care</ion-item>
+        <ion-item menu-close href="#/app/search">Tyres</ion-item>
+        <ion-item menu-close href="#/app/search">Helmets</ion-item>
+      </ion-list>
+      <ion-list>
+        <h4 class="padding-left">Books & More</h4>
+        <ion-item menu-close href="#/app/search">Books</ion-item>
+        <ion-item menu-close href="#/app/search">Pens & Stationary</ion-item>
+        <ion-item menu-close href="#/app/search">Music & Movies</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

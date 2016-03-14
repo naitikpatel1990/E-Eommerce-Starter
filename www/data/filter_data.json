@@ -1,0 +1,38 @@
+[
+  {
+    "label": "Brand",
+    "values": [
+      "Apple",
+      "Sony",
+      "Samsung",
+      "Lumia"
+    ]
+  },
+  {
+    "label": "Memory",
+    "values": [
+      "8 GB",
+      "16 GB",
+      "32 GB",
+      "64 GB"
+    ]
+  },
+  {
+    "label": "Color",
+    "values": [
+      "Black",
+      "White",
+      "Red",
+      "Yellow"
+    ]
+  },
+  {
+    "label": "Price",
+    "values": [
+      "&#8377; 0 - &#8377; 5000",
+      "&#8377; 5000 - &#8377; 10000",
+      "&#8377; 10000 - &#8377; 20000",
+      "&#8377; 20000 - &#8377; 50000"
+    ]
+  }
+]

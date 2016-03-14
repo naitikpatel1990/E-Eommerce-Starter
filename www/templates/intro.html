@@ -1,0 +1,26 @@
+<ion-view class="intro_view">
+  <ion-content class="intro_content">
+    <ion-slide-box delegate-handle="introSlider">
+      <ion-slide class="slide" ng-class="{'slide-{{$index+1}}': ($index + 1)}" ng-repeat="slide in slides">
+        <div class="slide_content">
+          <h3>Heading</h3>
+
+          <div class="image">
+            <img src="img/logo.png" alt="" class="logo"/>
+          </div>
+          <div class="padding_top_30px">
+            <div class="font_16px padding">This is slide {{$index + 1}}.</div>
+            <div class="font_14px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam doloremque
+              excepturi facere harum
+              incidunt ipsam ipsum natus perspiciatis sunt totam! Adipisci eius esse est in libero quam temporibus
+              tenetur veritatis!
+            </div>
+          </div>
+        </div>
+        <div class="start_btn" ng-if="($index + 1) == slides.length">
+          <button class="button button-block button-positive" ui-sref="login">Get Started</button>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,27 @@
+<ion-view view-title="Coupons" class="coupons_view bg_view">
+  <ion-content class="coupons_content">
+
+    <div class="padding-horizontal padding-top">
+      <button class="button button-block button-light margin_zero" ng-click="changeState('app.tabs.add-coupon')">
+        <i class="icon ion-ios-plus-outline"></i>&nbsp; Add Coupon
+      </button>
+    </div>
+
+    <div class="list card margin_top_5px" ng-repeat="i in [1,2,3,4]">
+      <div class="item item-body row">
+        <div class="col col-25 border_right_ccc">
+          <div class="font_24px font_bold">30%</div>
+          <div class="font_20px padding_top_5px">OFF</div>
+        </div>
+        <div class="col col-75">
+          <div class="font_14px">Code : ABCDEFGH</div>
+          <div class="font_12px">On minimum purchase of $200</div>
+        </div>
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <div class="tab-item font_12px" ng-click="">Expires on : Nov 12 2015</div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

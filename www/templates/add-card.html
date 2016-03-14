@@ -1,0 +1,28 @@
+<ion-view view-title="Add Card" class="add_card_view">
+  <ion-content class="add_card_content">
+
+    <div class="list">
+      <form name="addCardForm">
+        <div class="item item-input item-floating-label">
+          <label class="input-label" for="name">Name (As displayed on the card)</label>
+          <input type="text" id="name" placeholder="Enter Name" name="name" required ng-model=" newCard.name"/>
+        </div>
+        <div class="item item-input item-floating-label">
+          <label class="input-label" for="number">Card Number</label>
+          <input type="text" id="number" placeholder="Enter Card No" name="number" required ng-model=" newCard.number"/>
+        </div>
+        <div class="item item-input item-floating-label">
+          <label class="input-label" for="name">Expiry Date</label>
+          <input type="text" id="exp_date" placeholder="Enter Expiry Date (MM/YYYY)" name="expiry" required
+                 ng-model=" newCard.expiry"/>
+        </div>
+        <div class="item item-input item-floating-label">
+          <label class="input-label" for="pin">Last four Numbers</label>
+          <input type="text" id="pin" placeholder="4 Digit Pin No" name="pin" required ng-model=" newCard.pin"/>
+        </div>
+        <button class="button button-positive button-block" ng-disabled="addCardForm.$invalid">Add Card</button>
+      </form>
+    </div>
+
+  </ion-content>
+</ion-view>

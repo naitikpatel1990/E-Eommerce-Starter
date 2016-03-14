@@ -1,0 +1,34 @@
+<ion-modal-view class="filter_modal_view">
+  <ion-header-bar class="bar-royal">
+    <h1 class="title">Filter</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="row padding_zero">
+      <div class="col-34 filters">
+        <ion-scroll zooming="false" direction="y" class="padding_zero">
+          <div class="list">
+            <div class="item" ng-repeat="option in allFilterOptions"
+              ng-click="filterOptionSelected(option, $index)"
+              ng-class="{'active_filter':(option.label == selectedFilter)}">{{option.label}}</div>
+          </div>
+        </ion-scroll>
+      </div>
+      <div class="col-66 filter_options">
+        <ion-scroll zooming="false" direction="y" class="padding_zero">
+          <ion-list>
+            <ion-checkbox ng-model="filterModal[value]" ng-repeat="value in selectedFilterValues">
+              <span ng-bind-html="value"></span>
+            </ion-checkbox>
+          </ion-list>
+        </ion-scroll>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="padding_zero">
+    <div class="button-bar">
+      <a class="button button-light" ng-click="closeFilterModal()">Close</a>
+      <a class="button button-stable" ng-click="clearFilterSelections()">Clear</a>
+      <a class="button button-balanced" ng-click="closeFilterModal()">Apply</a>
+    </div>
+  </ion-footer-bar>
+</ion-modal-view>
